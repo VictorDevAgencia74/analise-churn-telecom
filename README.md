@@ -1,64 +1,180 @@
+<div align="center">
+
 # 📊 Análise de Churn - Telecom
 
-[![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-2.0-green.svg)](https://pandas.pydata.org/)
-[![Metabase](https://img.shields.io/badge/Metabase-Dashboard-orange.svg)](https://www.metabase.com/)
-[![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ecf8e.svg)](https://supabase.com/)
-[![License](https://img.shields.io/badge/License-Educational-lightgrey.svg)]()
+### Identificação de padrões de cancelamento e recomendações para redução de churn
 
-## 📌 Visão Geral
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-2.0-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Metabase](https://img.shields.io/badge/Metabase-509EE3?style=for-the-badge&logo=metabase&logoColor=white)](https://www.metabase.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
-Projeto completo de análise de churn (cancelamento de clientes) para uma empresa de telecomunicações. O objetivo é identificar padrões de cancelamento, entender quem são os clientes que mais cancelam e fornecer recomendações acionáveis para reduzir a taxa de churn.
+</div>
 
-**📈 Taxa de Churn identificada: 26,6%**
+---
+
+## 📌 Sobre o Projeto
+
+Este projeto foi desenvolvido como parte do meu portfólio de análise de dados. O objetivo é **identificar padrões de cancelamento** (churn) em uma empresa de telecomunicações e **fornecer recomendações acionáveis** para redução da taxa de evasão de clientes.
+
+### 🎯 Problema de Negócio
+
+A empresa estava perdendo clientes sem entender:
+- **Quem** está cancelando?
+- **Por que** cancelam?
+- **Quando** cancelam?
+- **O que fazer** para reverter?
+
+### 💡 Solução Proposta
+
+Análise completa dos dados com:
+- Limpeza e tratamento usando Python/Pandas
+- Criação de novas variáveis (feature engineering)
+- Dashboard interativo no Metabase
+- Insights acionáveis e recomendações estratégicas
+
+---
 
 ## 📁 Fonte dos Dados
 
-- **Dataset:** Telco Customer Churn (Kaggle)
-- **Link:** [https://www.kaggle.com/datasets/blastchar/telco-customer-churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
-- **Descrição:** Dados anonimizados de 7.043 clientes de uma empresa de telecomunicações
-- **Uso:** Apenas para fins educacionais e de portfólio
+| Propriedade | Detalhe |
+|-------------|---------|
+| **Dataset** | Telco Customer Churn |
+| **Fonte** | Kaggle |
+| **Link** | [Clique aqui](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) |
+| **Registros** | 7.043 clientes |
+| **Colunas** | 21 variáveis |
+| **Período** | Dados anuais anonimizados |
+| **Licença** | Uso educacional |
 
-## 🛠️ Ferramentas Utilizadas
+---
 
-| Etapa | Ferramenta |
-|-------|------------|
-| **Limpeza e tratamento** | Python (Pandas, NumPy) + Jupyter Notebook |
-| **Banco de dados na nuvem** | Supabase (PostgreSQL) |
-| **Dashboard** | Metabase |
-| **Queries SQL** | Análises customizadas |
-| **Versionamento** | Git + GitHub |
+## 🛠️ Tecnologias Utilizadas
+
+### 📓 Análise e Tratamento
+| Ferramenta | Finalidade |
+|------------|------------|
+| **Python 3.12** | Linguagem principal |
+| **Pandas** | Manipulação e limpeza de dados |
+| **NumPy** | Operações matemáticas |
+| **Matplotlib** | Visualizações iniciais |
+| **Jupyter Notebook** | Ambiente de desenvolvimento |
+
+### 🗄️ Banco de Dados
+| Ferramenta | Finalidade |
+|------------|------------|
+| **Supabase** | Banco de dados na nuvem (PostgreSQL) |
+| **SQL** | Queries para análise |
+
+### 📊 Dashboard
+| Ferramenta | Finalidade |
+|------------|------------|
+| **Metabase** | Criação de dashboard interativo |
+| **Public Link** | Compartilhamento do dashboard |
+
+---
 
 ## 📈 Principais Resultados
 
+### Métricas Gerais
+
+<div align="center">
+
 | Métrica | Valor |
-|---------|-------|
-| **Taxa de Churn Geral** | 26,6% |
-| **Clientes ativos** | 5.163 (73,4%) |
-| **Clientes cancelados** | 1.869 (26,6%) |
-| **Perda mensal média** | 156 clientes |
-| **Churn mensal equivalente** | 2,2% |
+|:--------|------:|
+| **📊 Taxa de Churn Geral** | **26,6%** |
+| 👥 Clientes ativos | 5.163 (73,4%) |
+| ❌ Clientes cancelados | 1.869 (26,6%) |
+| 📉 Perda mensal média | 156 clientes |
+| 📆 Churn mensal equivalente | 2,2% |
+
+</div>
 
 ### 🔍 Insights-Chave
 
-1. **Contrato mensal é o maior problema** - 88,6% dos cancelamentos vêm deste grupo
-2. **Primeiros 6 meses são críticos** - Churn de 45% neste período vs 8% após 2 anos
-3. **Pagamento por boleto tem maior risco** - Taxa 2x maior que débito automático
-4. **Perfil de maior risco** - Contrato mensal + Boleto + 0-6 meses = 68% de churn
+<div align="center">
+
+| # | Insight | Dado que comprova |
+|---|---------|-------------------|
+| 1️⃣ | **Contrato mensal é o maior problema** | 88,6% dos cancelamentos |
+| 2️⃣ | **Primeiros 6 meses são críticos** | Churn de 45% neste período |
+| 3️⃣ | **Pagamento por boleto tem maior risco** | Taxa 2x > que débito automático |
+| 4️⃣ | **Perfil de maior risco** | Mensal + Boleto + 0-6 meses = 68% |
+
+</div>
+
+---
 
 ## 📊 Dashboard Interativo
 
-🔗 **Acesse o dashboard online:** [http://localhost:3000/public/dashboard/7cc54f1b-bd5c-4817-8dfd-c7f9a8c5d409](http://localhost:3000/public/dashboard/7cc54f1b-bd5c-4817-8dfd-c7f9a8c5d409)
+<div align="center">
+
+### 🔗 Acesse o Dashboard
+
+[![Metabase](https://img.shields.io/badge/Clique_aqui_para_acessar_o_dashboard-509EE3?style=for-the-badge&logo=metabase&logoColor=white)](http://localhost:3000/public/dashboard/7cc54f1b-bd5c-4817-8dfd-c7f9a8c5d409)
+
+> ⚠️ **Nota:** O dashboard está rodando localmente. Para acessar, o Metabase precisa estar em execução.
+
+</div>
 
 ### Componentes do Dashboard
 
-| Card | Tipo | O que mostra |
-|------|------|--------------|
-| 01 | Número grande | Taxa de Churn (26,6%) |
+| Card | Tipo de Visualização | Finalidade |
+|------|---------------------|------------|
+| 01 | Número grande (KPI) | Taxa de Churn: 26,6% |
 | 02 | Gráfico de barras | Churn por tipo de contrato |
 | 03 | Gráfico de barras | Churn por forma de pagamento |
-| 04 | Gráfico de barras | Churn por tempo de uso (tenure) |
-| 05 | Tabela | Perfil de risco (top 10 combinações) |
-| 06 | Texto | Insights e recomendações de negócio |
+| 04 | Gráfico de barras | Churn por tempo de uso |
+| 05 | Tabela ordenada | Perfil de risco (top 10) |
+| 06 | Texto formatado | Insights e recomendações |
+
+---
+
+## 💡 Recomendações de Negócio
+
+<div align="center">
+
+| Prioridade | Ação | Impacto Esperado |
+|:----------:|------|------------------|
+| 🔴 **Alta** | Criar onboarding reforçado nos primeiros 6 meses | Reduzir churn inicial |
+| 🔴 **Alta** | Oferecer desconto para migrar de mensal para anual | Fidelizar clientes |
+| 🟡 **Média** | Incentivar débito automático (cashback/desconto) | Reduzir churn em 50% neste segmento |
+| 🟡 **Média** | Identificar e agir preventivamente sobre perfis de risco | Aumentar retenção |
+
+</div>
+
+### 📌 Próximos Passos Sugeridos
+
+- ✅ Analisar churn por canal de aquisição
+- ✅ Criar alertas automáticos para clientes com perfil de risco
+- ✅ Testar campanhas de retenção no 3º mês de contrato
+- ✅ Implementar NPS para identificar insatisfação precoce
+
+---
 
 ## 📁 Estrutura do Projeto
+📦 analise-churn-telecom/
+│
+├── 📁 dashboard/
+│ └── 📄 dashboard_churn.pdf # PDF exportado do Metabase
+│
+├── 📁 dados/
+│ ├── 📁 raw/
+│ │ └── 📄 WA_Fn-UseC_-Telco-Customer-Churn.csv # Dados brutos
+│ └── 📁 processed/
+│ └── 📄 telco_churn_cleaned.csv # Dados tratados
+│
+├── 📁 notebooks/
+│ └── 📓 01_limpeza_tratamento.ipynb # Análise completa
+│
+├── 📁 images/
+│ └── 🖼️ dashboard_preview.png # Print do dashboard
+│
+├── 📁 outputs/
+│ └── 📄 analise_churn_notebook.pdf # PDF do notebook
+│
+├── 📄 README.md # Documentação
+├── 📄 requirements.txt # Dependências
+└── 📄 .gitignore # Arquivos ignorados
