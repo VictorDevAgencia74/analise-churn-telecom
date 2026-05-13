@@ -162,7 +162,7 @@ Análise completa dos dados com:
 │
 ├── 📁 dashboard/
 │ ├── 📄 dashboard_churn.pdf # PDF do dashboard interativo
-│ └── 📄 analise_churn_notebook.pdf # PDF da análise técnica
+│ └── 📄 analise_churn_notebook.pdf # PDF da análise técnica (opcional)
 │
 ├── 📁 dados/
 │ ├── 📁 raw/
@@ -171,7 +171,7 @@ Análise completa dos dados com:
 │ └── 📄 telco_churn_cleaned.csv
 │
 ├── 📁 notbooks/
-│ └── 📓 01_limpeza_tratamento.ipynb
+│ └── 📓 01_limpeza_tratamento.ipynb # Notebook original (recomendado)
 │
 ├── 📁 image/
 │ └── 🖼️ dashboard_preview.png
@@ -183,26 +183,31 @@ Análise completa dos dados com:
 
 ## 📎 Links e Downloads
 
-### 📊 PDFs do Projeto
+### 📓 Análise Técnica (Notebook)
 
-| Arquivo | Visualizar | Baixar |
-|---------|------------|--------|
-| **Dashboard Interativo** | [🔍 Visualizar](https://github.com/VictorDevAgencia74/analise-churn-telecom/blob/main/dashboard/dashboard_churn.pdf) | [⬇️ Baixar](https://raw.githubusercontent.com/VictorDevAgencia74/analise-churn-telecom/main/dashboard/dashboard_churn.pdf) |
-| **Análise Técnica (Notebook)** | [🔍 Visualizar](https://github.com/VictorDevAgencia74/analise-churn-telecom/blob/main/dashboard/analise_churn_notebook.pdf) | [⬇️ Baixar](https://raw.githubusercontent.com/VictorDevAgencia74/analise-churn-telecom/main/dashboard/analise_churn_notebook.pdf) |
+| Formato | Ação | Vantagem |
+|---------|------|----------|
+| **📓 Notebook (.ipynb)** | [🔍 Visualizar no GitHub](https://github.com/VictorDevAgencia74/analise-churn-telecom/blob/main/notbooks/01_limpeza_tratamento.ipynb) | Código executável, melhor para recrutadores |
+| **📄 PDF do Notebook** | [⬇️ Baixar PDF](https://raw.githubusercontent.com/VictorDevAgencia74/analise-churn-telecom/main/dashboard/analise_churn_notebook.pdf) | Para leitura rápida, sem código |
+
+### 📊 Dashboard
+
+| Formato | Ação |
+|---------|------|
+| **📄 PDF do Dashboard** | [🔍 Visualizar](https://github.com/VictorDevAgencia74/analise-churn-telecom/blob/main/dashboard/dashboard_churn.pdf) / [⬇️ Baixar](https://raw.githubusercontent.com/VictorDevAgencia74/analise-churn-telecom/main/dashboard/dashboard_churn.pdf) |
+
+### 🚀 Dashboard Interativo (Metabase)
+
+> ⚠️ Rodando localmente. Para acessar, o Metabase precisa estar em execução.
+
+**Link local:** `http://localhost:3000/public/dashboard/7cc54f1b-bd5c-4817-8dfd-c7f9a8c5d409`
 
 ### 📁 Dados e Código
 
 | Recurso | Link |
 |---------|------|
-| 📓 **Notebook original (IPYNB)** | `./notbooks/01_limpeza_tratamento.ipynb` |
-| 📄 **Dataset tratado (CSV)** | `./dados/processed/telco_churn_cleaned.csv` |
 | 📦 **Dataset original** | [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) |
-
-### 🖼️ Imagens do Projeto
-
-| Imagem | Visualizar |
-|--------|------------|
-| **Prévia do Dashboard** | `./image/dashboard_preview.png` |
+| 📄 **Dataset tratado (CSV)** | `./dados/processed/telco_churn_cleaned.csv` |
 
 ---
 
