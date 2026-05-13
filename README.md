@@ -54,6 +54,7 @@ Análise completa dos dados com:
 ## 🛠️ Tecnologias Utilizadas
 
 ### 📓 Análise e Tratamento
+
 | Ferramenta | Finalidade |
 |------------|------------|
 | **Python 3.12** | Linguagem principal |
@@ -63,12 +64,14 @@ Análise completa dos dados com:
 | **Jupyter Notebook** | Ambiente de desenvolvimento |
 
 ### 🗄️ Banco de Dados
+
 | Ferramenta | Finalidade |
 |------------|------------|
 | **Supabase** | Banco de dados na nuvem (PostgreSQL) |
 | **SQL** | Queries para análise |
 
 ### 📊 Dashboard
+
 | Ferramenta | Finalidade |
 |------------|------------|
 | **Metabase** | Criação de dashboard interativo |
@@ -113,9 +116,9 @@ Análise completa dos dados com:
 
 ### 🔗 Acesse o Dashboard
 
-[![Metabase](https://img.shields.io/badge/Clique_aqui_para_acessar_o_dashboard-509EE3?style=for-the-badge&logo=metabase&logoColor=white)](http://localhost:3000/public/dashboard/7cc54f1b-bd5c-4817-8dfd-c7f9a8c5d409)
+> ⚠️ **Nota:** O dashboard está rodando localmente no Metabase (porta 3000). Para acessá-lo, o Metabase precisa estar em execução no seu computador.
 
-> ⚠️ **Nota:** O dashboard está rodando localmente. Para acessar, o Metabase precisa estar em execução.
+**Link local:** `http://localhost:3000/public/dashboard/7cc54f1b-bd5c-4817-8dfd-c7f9a8c5d409`
 
 </div>
 
@@ -147,10 +150,10 @@ Análise completa dos dados com:
 
 ### 📌 Próximos Passos Sugeridos
 
-- ✅ Analisar churn por canal de aquisição
-- ✅ Criar alertas automáticos para clientes com perfil de risco
-- ✅ Testar campanhas de retenção no 3º mês de contrato
-- ✅ Implementar NPS para identificar insatisfação precoce
+- [ ] Analisar churn por canal de aquisição
+- [ ] Criar alertas automáticos para clientes com perfil de risco
+- [ ] Testar campanhas de retenção no 3º mês de contrato
+- [ ] Implementar NPS para identificar insatisfação precoce
 
 ---
 
@@ -158,23 +161,21 @@ Análise completa dos dados com:
 📦 analise-churn-telecom/
 │
 ├── 📁 dashboard/
-│ └── 📄 dashboard_churn.pdf # PDF exportado do Metabase
+│ ├── 📄 dashboard_churn.pdf # PDF do dashboard interativo
+│ └── 📄 analise_churn_notebook.pdf # PDF da análise técnica
 │
 ├── 📁 dados/
 │ ├── 📁 raw/
-│ │ └── 📄 WA_Fn-UseC_-Telco-Customer-Churn.csv # Dados brutos
+│ │ └── 📄 WA_Fn-UseC_-Telco-Customer-Churn.csv
 │ └── 📁 processed/
-│ └── 📄 telco_churn_cleaned.csv # Dados tratados
+│ └── 📄 telco_churn_cleaned.csv
 │
-├── 📁 notebooks/
-│ └── 📓 01_limpeza_tratamento.ipynb # Análise completa
+├── 📁 notbooks/
+│ └── 📓 01_limpeza_tratamento.ipynb
 │
-├── 📁 images/
-│ └── 🖼️ dashboard_preview.png # Print do dashboard
+├── 📁 image/
+│ └── 🖼️ dashboard_preview.png
 │
-├── 📁 outputs/
-│ └── 📄 analise_churn_notebook.pdf # PDF do notebook
-│
-├── 📄 README.md # Documentação
-├── 📄 requirements.txt # Dependências
-└── 📄 .gitignore # Arquivos ignorados
+├── 📄 README.md
+└── 📄 requirements.txt
+
