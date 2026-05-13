@@ -179,3 +179,55 @@ Análise completa dos dados com:
 ├── 📄 README.md
 └── 📄 requirements.txt
 
+---
+
+## 📎 Links e Downloads
+
+### 📊 PDFs do Projeto
+
+| Arquivo | Visualizar | Baixar |
+|---------|------------|--------|
+| **Dashboard Interativo** | [🔍 Visualizar](https://github.com/VictorDevAgencia74/analise-churn-telecom/blob/main/dashboard/dashboard_churn.pdf) | [⬇️ Baixar](https://raw.githubusercontent.com/VictorDevAgencia74/analise-churn-telecom/main/dashboard/dashboard_churn.pdf) |
+| **Análise Técnica (Notebook)** | [🔍 Visualizar](https://github.com/VictorDevAgencia74/analise-churn-telecom/blob/main/dashboard/analise_churn_notebook.pdf) | [⬇️ Baixar](https://raw.githubusercontent.com/VictorDevAgencia74/analise-churn-telecom/main/dashboard/analise_churn_notebook.pdf) |
+
+### 📁 Dados e Código
+
+| Recurso | Link |
+|---------|------|
+| 📓 **Notebook original (IPYNB)** | `./notbooks/01_limpeza_tratamento.ipynb` |
+| 📄 **Dataset tratado (CSV)** | `./dados/processed/telco_churn_cleaned.csv` |
+| 📦 **Dataset original** | [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) |
+
+### 🖼️ Imagens do Projeto
+
+| Imagem | Visualizar |
+|--------|------------|
+| **Prévia do Dashboard** | `./image/dashboard_preview.png` |
+
+---
+
+## 👤 Autor
+
+<div align="center">
+
+**Victor Xavier**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-perfil)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VictorDevAgencia74)
+[![Portfólio](https://img.shields.io/badge/Portfólio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://seu-site.com)
+
+</div>
+
+---
+
+## 📄 Licença
+
+Este projeto é de **uso educacional** e para **fins de portfólio**. O dataset utilizado é público e disponível no Kaggle.
+
+---
+
+<div align="center">
+
+### ⭐ Gostou do projeto? Deixe uma estrela no GitHub! ⭐
+
+</div>
